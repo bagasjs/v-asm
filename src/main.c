@@ -1,13 +1,6 @@
 #include "v-asm.h"
 #include <stdio.h>
 
-#include <elf.h>
-#include <libelf.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
-#include <fcntl.h>
-
 #define SYS_EXIT 60
 
 int main(void)
@@ -28,7 +21,6 @@ int main(void)
     }
 
     vasm_bytearray_save(&result, "result.bin");
-
     return 0;
 }
 

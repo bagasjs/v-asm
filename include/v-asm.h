@@ -83,6 +83,7 @@ VASM_Error vasm_load_module_from_source(VASM_Module *result, const char *source,
 
 VASM_Error vasm_gen_x86_64(VASM_ByteArray *result, const VASM_Module *module);
 VASM_Error vasm_gen_arm64(VASM_ByteArray *result, const VASM_Module *module);
+VASM_Error vasm_gen_riscv64(VASM_ByteArray *result, const VASM_Module *module);
 VASM_Error vasm_gen_elf_x86_64(VASM_ByteArray *result, const VASM_Module *module);
 
 VASM_Inst_Info vasm_get_inst_info(VASM_Inst_Type type);

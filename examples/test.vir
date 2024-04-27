@@ -1,0 +1,8 @@
+global fn add($a w, $b w) w:
+    $r w= add $a, $b
+    ret $r
+
+global fn main($argv w, $b l) w:
+    $r w= 69
+    ret $r
+    
